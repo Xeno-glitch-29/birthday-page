@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: black;
+    padding: 2rem 2rem;
+}
+
+.list-item:hover {
+    color: yellow;
+}
+
+.list {
+    margin: 0;
+}
+
+.list-item {
+    display: inline;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.header {
+    background-image: url(images/happy-birthday-lettering_1094-119.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    font-size: 2rem;
+    color: aqua;
+    /* padding-top: 10rem; */
+}
+
+.header .btn {
+    background-color: aqua;
+    padding: 0.5rem 2rem;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.wrapper {
+    background-color: black;
+    opacity: 50%;
+    padding: 3rem 5rem;
+
+}
+
+.about {
+    display: flex;
+
+    gap: 5rem;
+    padding: 12rem 5rem;
+}
+
+.article {
+    flex-basis: 33%;
+    border: 1px solid rgba(58, 55, 121, 0.678);
+    box-shadow: 0 20px 30px rgba(58, 55, 121, 0.678);
+    transition: all 0.5s;
+
+}
+.article:hover {
+    
+    border: 3px solid rgba(58, 55, 121, 0.678);
+    box-shadow: 0 40px 50px rgba(58, 55, 121, 0.678);
+
+}
+.about .article .btn {
+    background-color: blueviolet;
+    padding: 0.5rem 3rem;
+    color: white;
+    border: 1px solid darkviolet;
+    border-radius: 10px;
+}
+
+.content-box {
+
+display: flex;
+
+height: 50%;
+
+flex-direction: column;
+
+align-items: center;
+
+
+
+
+    justify-content: space-between;
+}
+
+.image-box {
+    height: 50%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.content-box {
+    padding: 1.5rem 1rem;
+background: #00ffaa;
+background: linear-gradient(0deg, rgba(0, 255, 170, 1) 0%, rgba(170, 242, 0, 1) 50%, rgba(83, 0, 237, 1) 100%);
+}
+
+.content {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+/* section gallary-styles*/
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+}
+
+.gallary .box {
+    flex-basis: 31.2%;
+    /* the way to center the element inside a parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary .box {
+    background-color: rgb(191, 0, 255);
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    transition: all 1s ease-in-out;
+}
+
+.gallary .box:hover {
+    background-color: rgb(132, 5, 174);
+}
+
+.gallary .box .image-box .image {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+/* teamsection styles */
+.team {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+}
+
+.box {
+    width: 30%;
+    border: 1px solid blueviolet;
+}
+
+.team .box .team-member {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.team .box .team-desc {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(99, 96, 96)
+}
+
+.team .box i {
+
+    font-size: 3rem;
+    margin: 1px 8px;
+    color: blueviolet;
+}
+
+.team .box .icons-box {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.team {
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+
+        padding: 1rem 0;
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .list-item {
+        display: block;
+
+
+    }
+
+    /* header mobile responsivity */
+
+
+    .wrapper {
+
+        padding: 1rem 0.5rem;
+
+    }
+
+    /* about mobile responsivity */
+    .about {
+
+        flex-wrap: wrap;
+
+        padding: 6rem 1rem;
+    }
+
+    .article {
+        flex-basis: 100%;
+
+
+    }
+
+    /* gallary mobile responsivity */
+    .gallary .box {
+
+        flex-basis: 100%;
+
+
+
+
+
+    }
+
+    /* team mobile responsivity */
+
+    .team {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 0;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex-basis: 100%;
+        border: 1px solid blueviolet;
+    }
+
+    .team .box .team-member {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .team .box .image {
+        width: 20rem;
+        margin: auto;
+
+    }
+
+    .team .box .image-box {
+        text-align: center;
+
+    }
+
+    .team .box .team-desc {
+        font-size: 2rem;
+        text-align: center;
+        color: rgb(99, 96, 96)
+    }
+
+    .team .box i {
+
+        font-size: 3rem;
+        margin: 1px 8px;
+        color: blueviolet;
+    }
+
+    .team .box .icons-box {
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+
+    .team {
+        display: flex;
+    }
+
+}
+
+/* form styles */
+.form {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 2rem 4rem;
+    background-color:#5865f2 ;
+    color: white;
+}
+
+.form input:not(.checkbox, .radio) {
+    width: 70%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+}
+
+.form label {
+    font-size: 2rem;
+}
+
+.form-header {
+    margin: auto;
+    width: 80%;
+}
