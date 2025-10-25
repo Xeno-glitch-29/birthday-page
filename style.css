@@ -24,11 +24,6 @@ body {
 }
 
 .header {
-    background-image: url(images/happy-birthday-lettering_1094-119.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
     font-size: 2rem;
     color: aqua;
     /* padding-top: 10rem; */
@@ -300,33 +295,7 @@ box-shadow: rgba(0, 0, 0, 0.75) 0px 10px 20px;
 
 }
 
-/* form styles */
-.form {
-    width: 80%;
-    margin: auto;
-    border: 1px solid black;
-    padding: 2rem 4rem;
-    background-color:#5865f2 ;
-    color: white;
-}
-
-.form input:not(.checkbox, .radio) {
-    width: 70%;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
-}
-
-.form input[type="radio"],
-.form input[type="checkbox"] {
-    width: 30px;
-    height: 30px;
-}
-
-.form label {
-    font-size: 2rem;
-}
-
-.form-header {
-    margin: auto;
-    width: 80%;
+/* video section styles */
+video {
+    width: 100%;
 }
